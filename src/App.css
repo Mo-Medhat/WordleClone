@@ -1,0 +1,92 @@
+:root{
+    --navGradient: linear-gradient(90deg, rgba(0,82,212,1) 0%, rgba(67,100,247,1) 42%, rgba(111,177,252,1) 100%);
+    --darkMode: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 100%);
+    --fColor: #fff;
+}
+body {
+    margin: 0;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background: rgb(228, 241, 247);
+}
+.navBar{
+    background: var(--navGradient);
+    text-align: center;
+    color: var(--fColor);
+    padding: .5rem 0;
+    border-bottom: 1px solid white;
+}
+.navBar h1{
+    margin: 0;
+    font-size: 30px;
+    padding: .5rem 0;
+}
+.board, .keyboard{
+    text-align: center;
+
+}
+.board{
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.row{
+    display: flex;
+}
+.letter{
+    border: 2px solid black;
+    padding: .15rem;
+    margin: 0.25rem;
+    border-radius: 3px;
+    width: 75px;
+    height: 75px;
+    font-size: 4.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keyboard{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    display: flex;
+}
+.key{
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 0.25rem;
+    font-size: 1.25rem;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+.key:hover{
+    background: rgba(111,177,252,1);
+    color: white;
+}
+#big{
+    width: 80px;
+}
+#correct {
+    background-color: #5dea70;
+}
+#almost {
+    background-color: #f9dc36;
+}
+#error {
+    background-color: #8e8e8e75;
+}
+#disabled{
+    background-color: #8e8e8e75;
+}
+.text-center{
+    text-align: center;
+}
